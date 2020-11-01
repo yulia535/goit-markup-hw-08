@@ -1,20 +1,65 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #C4C4C4;
-    background-image:linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/section-1/Img-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
-
-    &-title {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image:linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
+        &-title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         text-align: center;
+        font-size: 26px;  
+        line-height: 1.61;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $secondary-title-color;
         margin-bottom: 30px;
-    }
+           }
+
 }
+
+@media screen and (max-width: 767px){
+    .hero {
+        background-image: url(../images/section-1/mb-img.jpg);
+     }
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx)and (min-width: 320px){
+    .hero {
+        background-image: url(../images/section-1/mb-img@2x.jpg);
+     }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .hero {
+        background-image: url(../images/section-1/tablet-img.jpg);
+     }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx)and (min-width: 768px){
+    .hero {
+        background-image: url(../images/section-1/tablet-img@2x.jpg);
+     }
+  }
+@media screen and (min-width: 1200px){
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: url(../images/section-1/desktop-img.jpg);
+        &-title {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx)and (min-width: 1200px){
+    .hero {
+        background-image: url(../images/section-1/desktop-img@2x.jpg);
+     }
+  }
 
