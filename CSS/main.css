@@ -949,6 +949,7 @@ footer {
     height: 609px;
     width: 450px;
     position: absolute;
+    top: 208px;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
