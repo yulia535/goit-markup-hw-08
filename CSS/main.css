@@ -950,8 +950,8 @@ footer {
     width: 450px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -959,6 +959,9 @@ footer {
   .modal {
     height: 581px;
     width: 528px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
