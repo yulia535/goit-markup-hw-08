@@ -61,103 +61,122 @@ header {
   position: relative;
 }
 
-@media screen and (min-width: 480px) {
-  .header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header {
-    border-bottom: 1px solid #ECECEC;
-  }
-  .logo {
-    font-family: Raleway, sans-serif;
-    color: #212121;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-  .logo-accent {
-    color: #2196F3;
-  }
-  .menu-button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
-  .menu-button .icon-cross {
-    display: none;
-  }
-  .menu-button.is-open .icon-cross {
-    display: block;
-  }
-  .menu-button.is-open .icon-menu {
-    display: none;
-  }
-  .menu-button svg:focus,
-  .menu-button svg:hover {
-    fill: #2196F3;
-  }
-  .menu-container {
-    width: 100%;
-  }
-  .nav-link {
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: #212121;
-  }
-  .nav-link:hover, .nav-link:focus {
-    color: #2196F3;
-  }
-  .nav-list .link.active {
-    color: #2196F3;
-  }
-  .active {
-    position: relative;
-  }
-  .active::after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background: #2196F3;
-    border-radius: 2px;
-    position: absolute;
-  }
-  .icon-envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: #757575;
-  }
-  .icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: #757575;
-  }
-  .address-link-header {
-    display: flex;
-    font-style: normal;
-    align-items: center;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: #757575;
-    vertical-align: middle;
-  }
-  .address-link-header:hover, .address-link-header:focus {
-    color: #2196F3;
-  }
-  .address-link-header:hover svg,
-  .address-link-header:focus svg {
-    fill: #2196F3;
-  }
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  color: #212121;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: #2196F3;
+}
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button svg:focus,
+.menu-button svg:hover {
+  fill: #2196F3;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #2196F3;
+}
+
+.nav-list .link.active {
+  color: #2196F3;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #2196F3;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.address-link-header {
+  display: flex;
+  font-style: normal;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
+  vertical-align: middle;
+}
+
+.address-link-header:hover, .address-link-header:focus {
+  color: #2196F3;
+}
+
+.address-link-header:hover svg,
+.address-link-header:focus svg {
+  fill: #2196F3;
+}
+
+/*@media screen and (min-width: 480px)*/
+/*and (min-width: 480px)*/
+@media screen and (max-width: 767px) {
   .header-box {
     height: 60px;
   }
