@@ -1,110 +1,113 @@
 header {
     position: relative;
 }
+address {
+    font-style: normal;
+}
 
 
-    .header-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header {
-        border-bottom: 1px solid #ECECEC;
-        
-    }
-    .logo {
-        font-family: $secondary-font;
-        color: $primary-title-color;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    border-bottom: 1px solid #ECECEC;
     
-        &-accent {
-            color: $accent-color;
-        }
-    }
-    .menu-button {
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        & .icon-cross {
-            display: none;
-        }
-        &.is-open .icon-cross {
-            display: block;
-        }
-        &.is-open .icon-menu {
-            display: none;
-        }
-        & svg:focus,
-        & svg:hover {
-            fill: $accent-color;
-        }
-    }
-    .menu-container {
-         width: 100%; 
+}
+.logo {
+    font-family: $secondary-font;
+    color: $primary-title-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     
-     }
-     .nav-link {
-        font-weight: 500;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: $primary-title-color;
-    
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-     }
-     .nav-list .link.active {
+
+    &-accent {
         color: $accent-color;
-      }
-      .active {
-        position: relative;
-  
-        &::after {
-          content: "";
-          display: block;
-          height: 4px;
-          width: 100%;
-          background: $accent-color;
-          border-radius: 2px;
-          position: absolute;
-        }
     }
-    .icon-envelope {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-        fill: $primary-text-color;
+}
+.menu-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    & .icon-cross {
+        display: none;
     }
-    .icon-smartphone {
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-        fill: $primary-text-color;
+    &.is-open .icon-cross {
+        display: block;
     }
-    .address-link-header {
-        display: flex;
-        font-style: normal;
-        align-items: center;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        color: $primary-text-color;
-        vertical-align: middle;
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-    
-        &:hover svg,
-        &:focus svg {
-            fill: $accent-color;
-        }
+    &.is-open .icon-menu {
+        display: none;
     }
+    & svg:focus,
+    & svg:hover {
+        fill: $accent-color;
+    }
+}
+.menu-container {
+        width: 100%; 
+
+    }
+    .nav-link {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primary-title-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    }
+    .nav-list .link.active {
+    color: $accent-color;
+    }
+    .active {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: $accent-color;
+        border-radius: 2px;
+        position: absolute;
+    }
+}
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+}
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+}
+.address-link-header {
+    display: flex;
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    vertical-align: middle;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &:hover svg,
+    &:focus svg {
+        fill: $accent-color;
+    }
+}
 /*@media screen and (min-width: 480px)*/
 /*and (min-width: 480px)*/
 
@@ -199,15 +202,16 @@ header {
     .logo {
     font-size: 26px;
     line-height: 1.19;
-    padding-top: 24px;
-    padding-bottom: 25px;
-
+    }
+    .logo-header{
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
     
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    .logo {
+    .logo-header {
         margin-right: 88px;
     }
      .address-link-header {
@@ -225,7 +229,7 @@ header {
 
 
 @media screen and (min-width: 1200px) {
-    .logo {
+    .logo-header {
         margin-right: 93px;
     }
 
