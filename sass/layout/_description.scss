@@ -1,40 +1,49 @@
-.description {
-    padding-bottom: 94px;
-
-    &-title {
-        @include font-title;
+@media screen and (max-width: 1199px){
+    .description{
+        display: none;
     }
-
-    &-list {
-        display: flex;
-        justify-content: space-between;
+}
+@media screen and (min-width: 1200px){
+    .description {
+        padding-bottom: 94px;
     
-        & img {
-            display: block;
+        &-title {
+            @include font-title;
         }
     
-        & li {
-            position: relative;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        
+            & img {
+                display: block;
+            }
+        
+            & li {
+                position: relative;
+            }
         }
+    
     }
+    
+    .label {
+        font-family: $main-font;
+        color: $secondary-title-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0,03em;
+        text-transform: uppercase;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        background-color: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    
 
 }
-
-.label {
-    font-family: $main-font;
-    color: $secondary-title-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0,03em;
-    text-transform: uppercase;
-    text-align: center;
-    height: 70px;
-    width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background-color: rgba(47, 48, 58, 0.8);
-    position: absolute;
-    bottom: 0px;
-}
-
