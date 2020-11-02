@@ -1,30 +1,31 @@
 
 /* ========team section========*/
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $background-color;
 
     &-title {
         @include font-title;
     }
-    &-list {
-        display: flex;
-        justify-content: space-between;
-            &img {
-                display: block;
-                margin-bottom: 30px; 
-            }
-            &>li {
-                width: 270px;
-                background-color: $secondary-title-color;
-                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 0px 0px 4px 4px;
-                padding-bottom: 30px;
-            }
-    }
 }
 
+.team-list {
+    
+    & img {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 460px;
+    }
+    &>li {
+    width: 100%;
+    background-color: $secondary-title-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+     }
+}
 .name {
     font-weight: 500;
     font-size: 16px;
@@ -52,8 +53,45 @@
     & a {
         background-color:  $secondary-title-color;
     }
+}
+@media screen and (max-width: 767px){
+    .team-list>li {
+        margin-bottom: 30px;}
+}
+@media screen and (min-width: 768px){
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & img {
+            width: 100%;
+            height: 374px; 
+            }
+        &>li {
+            width: 354px;
+            
+        }
+    }
+
 
 }
-
-
-
+@media screen and (max-width: 1199px){
+    .team-list>li:nth-child(-n + 2) {
+        margin-bottom: 30px;}
+    
+}
+@media screen and (min-width: 1200px){
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px;}
+    
+    .team-list {
+        & img {
+        width: 270px;
+        height: 260px; 
+        }
+        &>li {
+         width: 270px;
+        }
+    }
+}
