@@ -831,6 +831,7 @@ footer {
   display: inline-block;
   width: 100%;
   height: 50px;
+  color: #FFFFFF;
   background-color: #2F303A;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
